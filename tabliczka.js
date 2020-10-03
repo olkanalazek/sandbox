@@ -4,7 +4,7 @@ let x, y;
 let bufor = '';
 
 const pomnoz = (a, b) => {
-    return String(a * b).padStart(4);
+    return String(100 - a * b).padStart(4);
 };
 
 for (y = 1; y <= 10; y++) {
