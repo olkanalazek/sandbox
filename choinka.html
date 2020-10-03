@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>choinka</title>
+        <style type="text/css">
+            pre { font: 20px Courier; }
+            button { padding: 20px; }
+            #choinka { zoom: 50%; display: inline-block; left: 600px; position: absolute; transition: 400ms transform; }
+        </style>
+    </head>
+    <body>
+        czastek:
+        <button id="czastek-minus">-</button>
+        <button id="czastek-plus">+</button>
+        <br><br>
+        szerokosc:
+        <button id="szerokosc-minus">-</button>
+        <button id="szerokosc-plus">+</button>
+        <br><br>
+        kat:
+        <button id="kat-minus">-</button>
+        <button id="kat-plus">+</button>
+        <br>
+        <pre id="choinka"></pre>
+        <script src="choinka.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            let czastek = 4;
+            let szerokosc = 5;
+            let kat = 180;
+
+            const rysuj = (ile, krotnosc) => {
+                const element = document.getElementById('choinka');
+
+                console.log('rysuje choinke', ile, krotnosc);
+
+                if (element) {
+                    element.innerHTML = choinka(ile, krotnosc);
+                }
+            };
+
+            rysuj(czastek, szerokosc);
+
+            // ile czastek
+            document.getElementById('czastek-minus').onclick = () => {
+                czastek = (czastek > 1) ? (czastek - 1) : czastek;
+                rysuj(czastek, szerokosc);
+            };
+
+            document.getElementById('czastek-plus').onclick = () => {
+                czastek = (czastek < 5) ? (czastek + 1) : czastek;
+                rysuj(czastek, szerokosc);
+            };
+
+            // szerokosc
+            document.getElementById('szerokosc-minus').onclick = () => {
+                szerokosc = (szerokosc > 2) ? (szerokosc - 1) : szerokosc;
+                rysuj(czastek, szerokosc);
+            };
+
+            document.getElementById('szerokosc-plus').onclick = () => {
+                szerokosc = (szerokosc < 10) ? (szerokosc + 1) : szerokosc;
+                rysuj(czastek, szerokosc);
+            };
+
+            // kat
+            document.getElementById('choinka').style.transform = `rotate(${kat}deg)`;
+
+            document.getElementById('kat-minus').onclick = () => {
+                kat -= 45;
+                document.getElementById('choinka').style.transform = `rotate(${kat}deg)`;
+            };
+
+            document.getElementById('kat-plus').onclick = () => {
+                kat += 45;
+                document.getElementById('choinka').style.transform = `rotate(${kat}deg)`;
+            };
+        </script>
+    </body>
+</html>
