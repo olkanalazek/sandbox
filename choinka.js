@@ -1,15 +1,23 @@
 // choinka
 
-const choinka = (y) => {
+const czastka = (y, padding = 0) => {
     for (let loop = 0; loop < y; loop++) {
-        let ileSpacji = y - loop;
-        let ileGwiazdek = (loop + 1) * 2 - 1;
+        let ileSpacji = loop + 1;
+        let ileGwiazdek = y * 2 - 2 * loop - 1;
 
         let spacje = ' '.padStart(ileSpacji, ' ');
         let gwiazdki = '*'.padStart(ileGwiazdek, '*');
 
-        console.log(spacje, gwiazdki);
+        console.log(' '.padStart(padding, ' '), spacje, gwiazdki);
     }
 };
 
-choinka(30);
+const choinka = (ile, krotnosc = 3) => {
+    for (let loop = 1; loop <= ile; loop++) {
+        let wysokosc = (ile - loop + 1) * krotnosc - 1;
+
+        czastka(wysokosc, loop * krotnosc);
+    }
+};
+
+choinka(4, 5);
