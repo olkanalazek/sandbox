@@ -1,4 +1,3 @@
 # sandbox
 
-moje testowe repozytorium
-komentarz dodany z vscode
+Moje testowe repozytorium.
