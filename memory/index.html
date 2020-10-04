@@ -14,18 +14,64 @@
         <!-- material design -->
         <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet" type="text/css">
         <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+        <!-- gra -->
+        <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+        <header class="mdc-top-app-bar mdc-top-app-bar--fixed" id="app-bar">
             <div class="mdc-top-app-bar__row">
                 <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
                     <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button>
                     <span class="mdc-top-app-bar__title">Gra memory</span>
                 </section>
                 <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-                    <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Favorite">favorite</button>
+                    <div id="licznik"></div>
+                    <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" id="serduszko" aria-label="Favorite">favorite</button>
                 </section>
             </div>
         </header>
+        <aside class="mdc-drawer mdc-drawer--modal">
+            <div class="mdc-drawer__content">
+
+                <div class="mdw-navdrawer__account">
+                    <div class="mdw-navdrawer__image">
+                        <div class="mdw-navdrawer__avatars-current">
+                            <div class="mdw-button" mdw-image><img width="100%" src="me.jpg"></div>
+                        </div>
+                        <div class="mdw-button mdw-navdrawer__subtitle autor">
+                            <div class="mdw-navdrawer__name">Olka Nalazek</div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="mdc-list">
+                    <a class="mdc-list-item" href="#" aria-current="page" tabindex="0">
+                        <span class="mdc-list-item__ripple"></span>
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">person</i>
+                        <span class="mdc-list-item__text">Autor</span>
+                    </a>
+                    <a class="mdc-list-item" href="https://sp12.edu.bydgoszcz.pl" target="_blank" aria-current="page" tabindex="1">
+                        <span class="mdc-list-item__ripple"></span>
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">public</i>
+                        <span class="mdc-list-item__text">Moja szkoła</span>
+                    </a>
+                    <a class="mdc-list-item" href="https://github.com/olkanalazek" target="_blank" aria-current="page" tabindex="2">
+                        <span class="mdc-list-item__ripple"></span>
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">insert_emoticon</i>
+                        <span class="mdc-list-item__text">Zobacz mój Github</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>        
+        <div class="mdc-drawer-scrim"></div>
+        <main class="main-content" id="main-content">
+            <div class="mdc-top-app-bar--fixed-adjust">
+                App Content
+            </div>
+        </main>
+
+        <!-- gra -->
+        <script src="menu.js"></script>
     </body>
 </html>
