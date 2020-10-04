@@ -9,11 +9,11 @@
     margin-right: 20px;
 }
 
+/* psy */
 .pies {
     background: url('resources/pieski.png') no-repeat;
-    width: 600px;
-    height: 400px;
-    display: inline-block
+    display: inline-block;
+    zoom: 0.6;
 }
 
 .pies.n1 {
@@ -103,4 +103,28 @@
     width: 105px;
     height: 150px;
     background-position: -445px -270px;
+}
+
+/* karty */
+.karta {
+    background: url('resources/karta.png') no-repeat;
+    display: inline-block;
+    zoom: 0.28;
+}
+
+.karta.n1 {
+    width: 248px;
+    height: 360px;
+}
+
+.karta.n2 {
+    width: 260px;
+    height: 360px;
+    background-position: -247px 0px;
+}
+
+.karta.n3 {
+    width: 287px;
+    height: 360px;
+    background-position: -513px 0px;
 }
