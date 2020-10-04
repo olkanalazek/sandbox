@@ -13,7 +13,7 @@
 .pies {
     background: url('resources/pieski.png') no-repeat;
     display: inline-block;
-    zoom: 0.6;
+    zoom: 0.7;
 }
 
 .pies.n1 {
@@ -106,25 +106,47 @@
 }
 
 /* karty */
-.karta {
+.zakryta {
     background: url('resources/karta.png') no-repeat;
     display: inline-block;
     zoom: 0.28;
 }
 
-.karta.n1 {
+.zakryta.n1 {
     width: 248px;
     height: 360px;
 }
 
-.karta.n2 {
+.zakryta.n2 {
     width: 260px;
     height: 360px;
     background-position: -247px 0px;
 }
 
-.karta.n3 {
+.zakryta.n3 {
     width: 287px;
     height: 360px;
     background-position: -513px 0px;
+}
+
+.plansza {
+    padding: 90px 30px;
+    background: #d0d6d6;
+    height: 100vh;
+}
+
+.karta {
+    border: 1px solid #444;
+    background: #fff;
+    width: 120px;
+    height: 160px;
+    border-radius: 6px;
+    display: inline-flex;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.karta > * {
+    margin-left: 19%;
+    margin-top: 25%;
 }
