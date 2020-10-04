@@ -8,3 +8,99 @@
 #licznik {
     margin-right: 20px;
 }
+
+.pies {
+    background: url('resources/pieski.png') no-repeat;
+    width: 600px;
+    height: 400px;
+    display: inline-block
+}
+
+.pies.n1 {
+    width: 105px;
+    height: 150px;
+}
+
+.pies.n2 {
+    width: 105px;
+    height: 150px;
+    background-position: -110px 0px;
+}
+
+.pies.n3 {
+    width: 105px;
+    height: 150px;
+    background-position: -220px 0px;
+}
+
+.pies.n4 {
+    width: 105px;
+    height: 150px;
+    background-position: -325px 0px;
+}
+
+.pies.n5 {
+    width: 105px;
+    height: 150px;
+    background-position: -446px 0px;
+}
+
+.pies.n6 {
+    width: 105px;
+    height: 150px;
+    background-position: -5px -141px;
+}
+
+.pies.n7 {
+    width: 105px;
+    height: 150px;
+    background-position: -111px -141px;
+}
+
+.pies.n8 {
+    width: 105px;
+    height: 150px;
+    background-position: -218px -141px;
+}
+
+.pies.n9 {
+    width: 105px;
+    height: 150px;
+    background-position: -328px -141px;
+}
+
+.pies.n10 {
+    width: 105px;
+    height: 150px;
+    background-position: -445px -141px;
+}
+
+.pies.n11 {
+    width: 105px;
+    height: 150px;
+    background-position: -7px -270px;
+}
+
+.pies.n12 {
+    width: 105px;
+    height: 150px;
+    background-position: -117px -270px;
+}
+
+.pies.n13 {
+    width: 105px;
+    height: 150px;
+    background-position: -223px -273px;
+}
+
+.pies.n14 {
+    width: 105px;
+    height: 150px;
+    background-position: -337px -270px;
+}
+
+.pies.n15 {
+    width: 105px;
+    height: 150px;
+    background-position: -445px -270px;
+}
