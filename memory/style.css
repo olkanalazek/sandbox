@@ -9,6 +9,10 @@ body {
     height: 30px;
 }
 
+#status {
+    margin-right: 80px;
+}
+
 #licznik {
     margin-right: 20px;
 }
