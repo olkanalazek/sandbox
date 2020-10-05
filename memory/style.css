@@ -14,127 +14,132 @@ body {
 }
 
 /* psy */
-.pies {
+.karta > div {
     background: url('resources/pieski.png') no-repeat;
     display: inline-block;
     zoom: 0.6;
 }
 
-.pies.n1 {
+.karta > [pies="1"] {
     width: 105px;
     height: 150px;
 }
 
-.pies.n2 {
+.karta > [pies="2"] {
     width: 105px;
     height: 150px;
     background-position: -110px 0px;
 }
 
-.pies.n3 {
+.karta > [pies="3"] {
     width: 105px;
     height: 150px;
     background-position: -220px 0px;
 }
 
-.pies.n4 {
+.karta > [pies="4"] {
     width: 105px;
     height: 150px;
     background-position: -325px 0px;
 }
 
-.pies.n5 {
+.karta > [pies="5"] {
     width: 105px;
     height: 150px;
     background-position: -446px 0px;
 }
 
-.pies.n6 {
+.karta > [pies="6"] {
     width: 105px;
     height: 150px;
     background-position: -5px -141px;
 }
 
-.pies.n7 {
+.karta > [pies="7"] {
     width: 105px;
     height: 150px;
     background-position: -111px -141px;
 }
 
-.pies.n8 {
+.karta > [pies="8"] {
     width: 105px;
     height: 150px;
     background-position: -218px -141px;
 }
 
-.pies.n9 {
+.karta > [pies="9"] {
     width: 105px;
     height: 150px;
     background-position: -328px -141px;
 }
 
-.pies.n10 {
+.karta > [pies="10"] {
     width: 105px;
     height: 150px;
     background-position: -445px -141px;
 }
 
-.pies.n11 {
+.karta > [pies="11"] {
     width: 105px;
     height: 150px;
     background-position: -7px -270px;
 }
 
-.pies.n12 {
+.karta > [pies="12"] {
     width: 105px;
     height: 150px;
     background-position: -117px -270px;
 }
 
-.pies.n13 {
+.karta > [pies="13"] {
     width: 105px;
     height: 150px;
     background-position: -223px -273px;
 }
 
-.pies.n14 {
+.karta > [pies="14"] {
     width: 105px;
     height: 150px;
     background-position: -337px -270px;
 }
 
-.pies.n15 {
+.karta > [pies="15"] {
     width: 105px;
     height: 150px;
     background-position: -445px -270px;
 }
 
 /* karty */
-.zakryta {
+.zakryta > div {
     background: url('resources/karta.png') no-repeat;
     display: inline-block;
     zoom: 0.25;
 }
 
-.zakryta.n1 {
-    width: 248px;
-    height: 360px;
+.zakryta > [bg="1"] {
+    width: 248px !important;
+    height: 360px !important;
+    background-position: 0px 0px !important;
 }
 
-.zakryta.n2 {
-    width: 260px;
-    height: 360px;
-    background-position: -247px 0px;
+.zakryta > [bg="2"] {
+    width: 260px !important;
+    height: 360px !important;
+    background-position: -247px 0px !important;
 }
 
-.zakryta.n3 {
-    width: 286px;
-    height: 360px;
-    background-position: -513px 0px;
+.zakryta > [bg="3"] {
+    width: 286px !important;
+    height: 360px !important;
+    background-position: -513px 0px !important;
 }
 
-.plansza {
-    zoom: 0.7;
+.mdc-top-app-bar--fixed-adjust {
+    padding-top: 80px;
+}
+
+#plansza {
+    zoom: 0.85;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
