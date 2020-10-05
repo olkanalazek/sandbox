@@ -130,9 +130,10 @@
 }
 
 .plansza {
-    padding: 90px 10px;
+    padding: 100px 7px;
     background: #d0d6d6;
     height: 100vh;
+    zoom: 0.7;
 }
 
 .karta {
