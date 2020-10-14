@@ -20,6 +20,20 @@ const zakryjKarty = () => {
     }
 };
 
+const losujTlo = () => {
+    const karty = document.querySelectorAll('.karta.zakryta');
+
+    karty.forEach(x => {
+        if (Math.random() > 0.7) {
+            const tlo = 1 + (Math.floor(Math.random() * 10) % 3);
+
+            x.children[0].setAttribute('bg', tlo);
+        }
+    });
+
+    setTimeout(losujTlo, Math.random() * 1500 + 1000);
+};
+
 const nowaGra = () => {
     const plansza = document.getElementById('plansza');
 
@@ -32,11 +46,12 @@ const nowaGra = () => {
         .sort((a, b) => a.sort - b.sort)
         .map((a) => a.value);
 
-    const karty = kolejnosc.map(x => zwrocKarte(x, x % 3));
+    const karty = kolejnosc.map(x => zwrocKarte(x, Math.floor(Math.random() * 10 + x) % 3));
 
     plansza.innerHTML = karty.join('');
     uaktualnijStatus();
     setTimeout(zakryjKarty, 3000);
+    setTimeout(losujTlo, 5000);
 };
 
 const uaktualnijStatus = () => {
