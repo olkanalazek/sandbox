@@ -36,6 +36,7 @@ body {
     background: url('resources/pieski.png') no-repeat;
     display: inline-block;
     zoom: 0.6;
+    transition: background 300ms;
 }
 
 .karta > [pies="1"] {
@@ -175,6 +176,19 @@ body {
     display: inline-flex;
     cursor: pointer;
     margin: 5px;
+
+    /* obrot */
+    perspective: 600px;
+    transition: transform 1s, opacity 1s;
+    transform-style: preserve-3d;
+}
+
+.zgadnieta {
+    opacity: 0.1;
+}
+
+.zakryta {
+    transform: rotateY(180deg);
 }
 
 .karta > * {

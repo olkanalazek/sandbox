@@ -81,7 +81,7 @@ const kartaClick = (karta) => {
 
             if (pies1 === pies2) {
                 odkryte.map(x => {
-                    x.style.visibility = 'hidden';
+                    x.classList.add('zgadnieta');
                 });
             } else {
                 odkryte.map(x => {
