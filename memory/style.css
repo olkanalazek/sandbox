@@ -161,10 +161,7 @@ body {
     display: inline-flex;
     cursor: pointer;
     margin: 5px;
-}
-
-.karta:focus {
-    outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .karta > * {
