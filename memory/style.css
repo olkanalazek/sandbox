@@ -163,6 +163,10 @@ body {
     margin: 5px;
 }
 
+.karta:focus {
+    outline: none;
+}
+
 .karta > * {
     margin-left: 11%;
     margin-top: 6%;
