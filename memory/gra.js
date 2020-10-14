@@ -48,6 +48,10 @@ const kartaClick = (karta) => {
         return;
     }
 
+    if (odkryte.includes(karta)) {
+        return;
+    }
+
     karta.classList.remove('zakryta');
     odkryte.push(karta);
     console.log(odkryte);
